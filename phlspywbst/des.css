@@ -1,0 +1,78 @@
+a{
+    color: black;
+    cursor: pointer; 
+    text-decoration: none;
+    /* pointer-events: none; */   
+}
+a:hover {
+    text-decoration: none;
+}
+.backcolor{
+    background-color: black;
+}
+#bac{
+    background-color: rgba(31, 7, 7, 0.438);
+}
+body{
+    background-color: gray;
+}
+.conimag1 {
+    background-image: url('pic1.jpg');
+    background-color: #cccccc;
+    height: 600px;
+    min-height: 100%;
+    min-width: 100%;
+    width: 100%;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    }
+    #back1{
+        background-color: black;
+
+    }
+    .conimag1 {
+        background-image: url('pic1.jpg');
+        background-color: black;
+        height: 600px;
+        min-height: 100%;
+        min-width: 100%;
+        width: 100%;
+        /* background-position: center; */
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        }
+        .conimag2 {
+            background-image: url('pic2.jpg');
+            background-color: black;
+            height: 300px;
+            min-height: 100%;
+            min-width: 100%;
+            width: 100%;
+            /* background-position: center; */
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            }
+            .conimag3 {
+                background-image: url('pic3.jpg');
+                background-color: black;
+                height: 300px;
+                min-height: 100%;
+                min-width: 100%;
+                width: 100%;
+                /* background-position: center; */
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+                } 
+
+    .textbox{
+        background-color: white;
+        /* border: white; */
+        padding: 40px; 
+        width: auto;
+    }
+        

@@ -1,0 +1,114 @@
+<! Doctype HTML>
+<html lang="en">
+    <head>
+        <title> Pizzaorder</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="cod.js"></script>
+        <script src="cod1.js"></script>
+        <link rel="stylesheet" href="des.css">
+        <style>
+                body{
+                    border: solid;
+                    padding: 25px;
+                    background-clip: border-box; 
+                    background-color: lightsalmon;
+                }
+                </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2 class="text-center"><br>Pizza Order Form <br></h2><br>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2 text-right">
+                        <label for="customer_name"><b>Customer Name:</b></label>
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="text" class= "form-control" id="customer_name" placeholder="Enter Customer Name" name="customer_name" required >
+                    </div>  
+                    <div class="col-sm-2 text-right">
+                        <label for="phn_no"><b>Phone Number:</b></label>
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="number"  class= "form-control" id="phn_no" placeholder="Enter Phone Number" name="phn_no" required>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+        <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-2"><b>Pizza Choice</b></div>
+                <div class="col-sm-2"><b>Quantity</b></div>
+                <div class="col-sm-2"><b>Unit price </b></div>
+                <div class="col-sm-2"> <b>Total</b> </div>
+            </div>
+        <div class="row">
+            <div class="col-sm-2"><img src="pizza.jpg" class="rounded float-right" alt="Logo" style="width:50px; height:60px; "></div>
+            <div class="col-sm-2">
+                <div class="custom-control custom-checkbox mb3">
+                  <input type="checkbox" class="custom-control-input" id="customCheck" name="bigItaly">
+                  <label class="custom-control-label" for="customCheck">Big Italy</label>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                    <input type="text"  id="Qbigitaly" onfocusout="calculateTotal()" >
+            </div>
+            <div class="col-sm-2">
+                    <input type="text" id="Ubigitaly" value="12.00" disabled >
+            </div>
+            <div class="col-sm-2">
+                    <input type="text" id="Tbigitaly" disabled >
+            </div>
+        </div><br>
+        <div class="row">
+                <div class="col-sm-2"><img src="pizza1.jpg" class="rounded float-right" alt="Logo" style="width:50px; height:60px; "></div>
+                <div class="col-sm-2">
+                    <div class="custom-control custom-checkbox mb3">
+                      <input type="checkbox" class="custom-control-input" id="customCheck1" name="meatlover">
+                      <label class="custom-control-label" for="customCheck1">Meat Lover</label>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                        <input type="text"  id="Qmeatlover" onfocusout="calculateTotal()" >
+                </div>
+                <div class="col-sm-2">
+                        <input type="text"  id="Umeatlover" value="10.00" disabled >
+                </div>
+                <div class="col-sm-2">
+                        <input type="text"  id="Tmeatlover" disabled >
+                </div>
+            </div><br>
+            <div class="row">
+                    <div class="col-sm-2"><img src="pizza2.png" class="rounded float-right" alt="Logo" style="width:50px; height:60px; "></div>
+                    <div class="col-sm-2">
+                        <div class="custom-control custom-checkbox mb3">
+                          <input type="checkbox" class="custom-control-input" id="customCheck2" name="veggilover">
+                          <label class="custom-control-label" for="customCheck2">Veggie Lover</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                            <input type="text"  id="Qveglover" onfocusout="calculateTotal()">
+                    </div>
+                    <div class="col-sm-2">
+                            <input type="text" id="Uveglover" value="9.50" disabled>
+                    </div>
+                    <div class="col-sm-2">
+                            <input type="text" id="Tveglover" disabled >
+                    </div>
+                </div><br>
+                <div class="row">
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-2"><b>Total Order </b></div>
+                        <div class="col-sm-2">  <input type="text"  id="Total" disabled ></div>
+                    </div><br>
+                    <div class="row">
+                            <div class="col-sm-6 text-right"><button type="button" onclick="total()" class="btn btn-info">Calculate Total Order</button></div>
+                            <div class="col-sm-6"><button type="button" class="btn btn-info" onclick="location.reload()">Clear Data</button></div>
+                        </div>
+    </body>
+</html>
